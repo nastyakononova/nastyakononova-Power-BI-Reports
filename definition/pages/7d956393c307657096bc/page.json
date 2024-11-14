@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.2.0/schema.json",
+  "name": "7d956393c307657096bc",
+  "displayName": "Country",
+  "displayOption": "ActualSize",
+  "height": 240,
+  "width": 320,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filterac676744473821720119",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimCountry"
+              }
+            },
+            "Property": "Country"
+          }
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "Pod1",
+    "type": "Tooltip",
+    "parameters": [
+      {
+        "name": "Param_Filterac676744473821720119",
+        "boundFilter": "Filterac676744473821720119",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimCountry"
+              }
+            },
+            "Property": "Country"
+          }
+        }
+      }
+    ]
+  }
+}
